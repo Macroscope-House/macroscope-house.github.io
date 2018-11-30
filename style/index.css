@@ -5,14 +5,27 @@ body {
     line-height: 1.3;
     /*padding: 0 0.75em;*/
     font-size: 1.1em;
-    
-    background-color: black;
     color: white;
 }
-img#profile {
+
+body, html {
+  height: 100%;
+}
+.bg {
+  /* The image used */
+/*  background-image: url("/images/space.jpg");*/
+  background-color: black;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#profile {
     width: 100%;
+    height: 100%;
     text-align: center;
-    max-height: 300px;
 }
 ul {
     line-height: 1.5;
@@ -35,17 +48,15 @@ ul {
     margin-right: 20px;
 }
 
-h1 {
-    text-align: center;
+a {
+    color: white;
+    font-style: underline;
+    font-weight: bold;
 }
 
 #mainTextContainer {
     text-align: center;
-    margin-top: 50px;
-}
-
-#mainText {
-    min-width: 
+    padding-top: 50px;
 }
 
 #left {
@@ -62,4 +73,22 @@ h1 {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.lastItem {
+    padding-bottom: 40px;
+}
+
+.space {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.nextSection {
+    margin-top: 40px;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
 }

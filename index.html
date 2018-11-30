@@ -9,8 +9,10 @@
 	<link rel="stylesheet" href="style/index.css" type="text/css" media="screen" charset="utf-8">
 	<link rel="shortcut icon" href="about:blank">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129533683-1"></script>
-	
-	
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 	<!-- favicon -->
 	<!-- favicon source: https://www.maxpixel.net/Kaleidoscope-Structure-Pattern-Mandala-Background-2817918 -->
 	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
@@ -45,36 +47,67 @@
 <body>
 	<div id="langContainer">
 		<div id="lang">
-			(<a href="index.html">en</a>)
-			(<a href="index-fr.html">fr</a>)
+			<a class="text-white" href="index-fr.html">français</a>
 		</div>
 	</div>
-	<img id="profile" src="logo.jpg" alt="logo" />
 	
-	<div id="mainTextContainer">
+	<div class="text-center">
+		<img id="profile" class="d-none d-xl-block" src="images/full_logo.jpg" alt="logo" />
+		<img id="profile" class="d-xl-none" src="images/logo.jpg" alt="logo" />
+	</div>
+
+	<div id="mainTextContainer" class="bg text-white">
 		<div id="mainText">
 			<p>The Macroscope is a sharehouse of people interested in effective altruism and rationality.</p>
 			
 			<p>We hold various events &mdash; workshops, presentations, etc. &mdash; and are are working on open projects.</p>
 		
-			<p>Follow us on <a href="https://www.facebook.com/macroscopers/">Facebook</a> to be informed. Get in touch, via <a href="mailto:macroscopehouse@gmail.com">macroscopehouse@gmail.com</a>, with any inquiry.</p>
+			<p>Follow us on <a class="text-white" href="https://www.facebook.com/macroscopers/">Facebook</a> to be informed. Get in touch, via <a class="text-white" href="mailto:macroscopehouse@gmail.com">macroscopehouse@gmail.com</a>, with any inquiry.</p>
 		</div>
 		<br/>
 	
-		<h1>&mdash; Stay with us &mdash; </h1>
+	
+		<h1 class="title">&mdash; Stay with us &mdash; </h1>
 		
-		<div id="left">
-			<img src="images/kaleidoscope-1.jpg" height="200" width="200"/>
-			<p><b>Short-term stays</b></p>
-			<p>If you're interested in staying at the Macroscope for a few days / weeks, reach out to us at <a href="mailto:macroscopehouse@gmail.com">macroscopehouse@gmail.com</a>. We usually charge 20 CAD per night. For people in the rationalist, effective altruist or cryonics community, we don't charge anything the first 3 nights.</p>
+		<div class="row">
+			<div class="col-lg-1">
+				
+			</div>
+		  	<div class="col-12 col-md-6 col-lg-5">
+				<img class="space" src="images/kaleidoscope-1.jpg" height="200" width="200"/>
+				<h2 class="subtitle">Short-term stays</h2>
+				<p>If you're interested in staying at the Macroscope for a few days / weeks, reach out to us at <a class="text-white" href="mailto:macroscopehouse@gmail.com">macroscopehouse@gmail.com</a>. We usually charge 20 CAD per night. For people in the rationalist, effective altruist or cryonics community, we don't charge anything the first 3 nights.</p>
+		  	</div>
+		  	<div class="col-12 col-md-6 col-lg-5">
+				<img class="space" src="images/kaleidoscope-2.jpg" height="200" width="200"/>
+				<h2 class="subtitle">Long-term stays</h2>
+				<p>If you're interested in living at the Macroscope for more than a month, please apply <a class="text-white" href="https://goo.gl/forms/hJoAMhroioCAXwx63">here</a>.</p>
+		  	</div>
+			<div class="col-lg-1">
+				
+			</div>
+		  
 		</div>
 		
-		<div id="right">
-			<img src="images/kaleidoscope-2.jpg" height="200" width="200"/>
-			<p><b>Long-term stays</b></p>
-			<p>If you're interested in living at the Macroscope for more than a month, please apply <a href="https://goo.gl/forms/hJoAMhroioCAXwx63">here</a>.</p>
+		<h1 class="title nextSection">&mdash; Location &mdash; </h1>
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-12 col-lg-8">
+				<iframe class="space" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.3743456112506!2d-73.57621208455373!3d45.52267193756108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91bd3a252b92f%3A0x6e894946c85d8583!2sMacroscope!5e0!3m2!1sen!2sca!4v1543553755083" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="col-lg-2"></div>
 		</div>
-
+		
+		<div class="row lastItem"></div>
 	</div>
+	
+	
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
